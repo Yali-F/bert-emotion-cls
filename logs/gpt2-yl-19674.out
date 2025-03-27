@@ -1,0 +1,170 @@
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+12/12/2023 19:16:13 - INFO - __main__ - Distributed environment: NO
+Num processes: 1
+Process index: 0
+Local process index: 0
+Device: cuda
+
+Mixed precision type: no
+
+Downloading data files:   0%|          | 0/2 [00:00<?, ?it/s]Downloading data files: 100%|██████████| 2/2 [00:00<00:00, 23172.95it/s]
+Extracting data files:   0%|          | 0/2 [00:00<?, ?it/s]Extracting data files: 100%|██████████| 2/2 [00:00<00:00, 58.24it/s]
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 16000 examples [00:00, 267302.10 examples/s]
+Generating validation split: 0 examples [00:00, ? examples/s]Generating validation split: 2000 examples [00:00, 282568.40 examples/s]
+loading configuration file /home/fuyali/emotionClassification/checkpoints/config.json
+Model config BertConfig {
+  "_name_or_path": "/home/fuyali/emotionClassification/checkpoints",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2",
+    "3": "LABEL_3",
+    "4": "LABEL_4",
+    "5": "LABEL_5"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2,
+    "LABEL_3": 3,
+    "LABEL_4": 4,
+    "LABEL_5": 5
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+loading configuration file /home/fuyali/emotionClassification/checkpoints/config.json
+Model config BertConfig {
+  "_name_or_path": "/home/fuyali/emotionClassification/checkpoints",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+loading file vocab.txt
+loading file tokenizer.json
+loading file added_tokens.json
+loading file special_tokens_map.json
+loading file tokenizer_config.json
+loading configuration file /home/fuyali/emotionClassification/checkpoints/config.json
+Model config BertConfig {
+  "_name_or_path": "/home/fuyali/emotionClassification/checkpoints",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+loading configuration file /home/fuyali/emotionClassification/checkpoints/config.json
+Model config BertConfig {
+  "_name_or_path": "/home/fuyali/emotionClassification/checkpoints",
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "classifier_dropout": null,
+  "gradient_checkpointing": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pad_token_id": 0,
+  "position_embedding_type": "absolute",
+  "transformers_version": "4.35.2",
+  "type_vocab_size": 2,
+  "use_cache": true,
+  "vocab_size": 30522
+}
+
+loading weights file /home/fuyali/emotionClassification/checkpoints/pytorch_model.bin
+Some weights of the model checkpoint at /home/fuyali/emotionClassification/checkpoints were not used when initializing BertForSequenceClassification: ['cls.seq_relationship.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at /home/fuyali/emotionClassification/checkpoints and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Running tokenizer on dataset:   0%|          | 0/16000 [00:00<?, ? examples/s]Running tokenizer on dataset:  31%|███▏      | 5000/16000 [00:00<00:00, 22193.24 examples/s]Running tokenizer on dataset:  69%|██████▉   | 11000/16000 [00:00<00:00, 34360.72 examples/s]Running tokenizer on dataset: 100%|██████████| 16000/16000 [00:00<00:00, 39419.79 examples/s]Running tokenizer on dataset: 100%|██████████| 16000/16000 [00:00<00:00, 35563.60 examples/s]
+Running tokenizer on dataset:   0%|          | 0/2000 [00:00<?, ? examples/s]Running tokenizer on dataset: 100%|██████████| 2000/2000 [00:00<00:00, 45245.27 examples/s]
+12/12/2023 19:16:17 - INFO - __main__ - Sample 6990 of the training set: {'input_ids': [101, 1045, 2134, 2102, 2514, 2008, 1045, 2018, 2200, 2172, 2000, 2022, 18836, 2005, 102], 'token_type_ids': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 1}.
+12/12/2023 19:16:17 - INFO - __main__ - Sample 10976 of the training set: {'input_ids': [101, 1045, 2572, 1045, 2064, 2102, 2393, 2021, 2514, 18386, 2055, 1996, 2878, 2518, 102], 'token_type_ids': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 4}.
+12/12/2023 19:16:17 - INFO - __main__ - Sample 14415 of the training set: {'input_ids': [101, 1045, 2514, 2061, 6118, 2055, 4129, 2026, 3866, 3924, 102], 'token_type_ids': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'labels': 2}.
+/home/fuyali/miniconda3/envs/gpt2/lib/python3.10/site-packages/accelerate/accelerator.py:527: FutureWarning: The `use_fp16` property is deprecated and will be removed in version 1.0 of Accelerate use `Accelerator.mixed_precision == 'fp16'` instead.
+  warnings.warn(
+12/12/2023 19:26:27 - WARNING - evaluate.loading - Using the latest cached version of the module from /home/fuyali/.cache/huggingface/modules/evaluate_modules/metrics/evaluate-metric--accuracy/f887c0aab52c2d38e1f8a215681126379eca617f96c447638f751434e8e65b14 (last modified on Tue Nov 21 18:19:33 2023) since it couldn't be found locally at evaluate-metric--accuracy, or remotely on the Hugging Face Hub.
+12/12/2023 19:26:27 - INFO - __main__ - ***** Running training *****
+12/12/2023 19:26:27 - INFO - __main__ -   Num examples = 16000
+12/12/2023 19:26:27 - INFO - __main__ -   Num Epochs = 1
+12/12/2023 19:26:27 - INFO - __main__ -   Instantaneous batch size per device = 32
+12/12/2023 19:26:27 - INFO - __main__ -   Total train batch size (w. parallel, distributed & accumulation) = 32
+12/12/2023 19:26:27 - INFO - __main__ -   Gradient Accumulation steps = 1
+12/12/2023 19:26:27 - INFO - __main__ -   Total optimization steps = 500
+  0%|          | 0/500 [00:00<?, ?it/s]You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+  0%|          | 1/500 [00:03<27:09,  3.27s/it]  1%|          | 3/500 [00:03<07:31,  1.10it/s]  1%|          | 5/500 [00:03<04:02,  2.04it/s]  1%|▏         | 7/500 [00:03<02:35,  3.17it/s]  2%|▏         | 9/500 [00:03<01:53,  4.32it/s]  2%|▏         | 11/500 [00:04<01:29,  5.46it/s]  3%|▎         | 13/500 [00:04<01:15,  6.42it/s]  3%|▎         | 15/500 [00:04<01:06,  7.32it/s]  3%|▎         | 17/500 [00:04<00:59,  8.15it/s]  4%|▍         | 19/500 [00:04<00:55,  8.67it/s]  4%|▍         | 21/500 [00:05<01:08,  7.01it/s]  4%|▍         | 22/500 [00:05<01:10,  6.77it/s]  5%|▍         | 23/500 [00:05<01:12,  6.56it/s]  5%|▍         | 24/500 [00:05<01:11,  6.68it/s]  5%|▌         | 25/500 [00:05<01:07,  7.00it/s]  5%|▌         | 26/500 [00:06<01:08,  6.94it/s]  5%|▌         | 27/500 [00:06<01:09,  6.84it/s]  6%|▌         | 28/500 [00:06<01:08,  6.93it/s]  6%|▌         | 29/500 [00:06<01:04,  7.25it/s]  6%|▌         | 30/500 [00:06<01:02,  7.47it/s]  6%|▌         | 31/500 [00:06<01:00,  7.74it/s]  6%|▋         | 32/500 [00:06<00:57,  8.11it/s]  7%|▋         | 33/500 [00:06<00:54,  8.56it/s]  7%|▋         | 35/500 [00:07<00:49,  9.35it/s]  7%|▋         | 36/500 [00:07<00:50,  9.26it/s]  7%|▋         | 37/500 [00:07<00:50,  9.14it/s]  8%|▊         | 38/500 [00:07<00:52,  8.83it/s]  8%|▊         | 39/500 [00:07<00:53,  8.57it/s]  8%|▊         | 40/500 [00:07<00:53,  8.56it/s]  8%|▊         | 41/500 [00:07<00:51,  8.84it/s]  9%|▊         | 43/500 [00:08<00:47,  9.71it/s]  9%|▉         | 44/500 [00:08<00:47,  9.65it/s]  9%|▉         | 46/500 [00:08<00:46,  9.72it/s]  9%|▉         | 47/500 [00:08<00:46,  9.74it/s] 10%|▉         | 49/500 [00:08<00:45,  9.84it/s] 10%|█         | 50/500 [00:08<00:45,  9.79it/s] 10%|█         | 52/500 [00:08<00:45,  9.91it/s] 11%|█         | 53/500 [00:09<00:45,  9.80it/s] 11%|█         | 54/500 [00:09<00:46,  9.60it/s] 11%|█         | 55/500 [00:09<00:46,  9.62it/s] 11%|█▏        | 57/500 [00:09<00:44,  9.99it/s] 12%|█▏        | 59/500 [00:09<00:43, 10.20it/s] 12%|█▏        | 61/500 [00:09<00:44,  9.92it/s] 12%|█▏        | 62/500 [00:09<00:44,  9.86it/s] 13%|█▎        | 63/500 [00:10<00:44,  9.78it/s] 13%|█▎        | 64/500 [00:10<00:44,  9.75it/s] 13%|█▎        | 66/500 [00:10<00:44,  9.85it/s] 13%|█▎        | 67/500 [00:10<00:45,  9.62it/s] 14%|█▎        | 68/500 [00:10<00:46,  9.25it/s] 14%|█▍        | 69/500 [00:10<00:46,  9.31it/s] 14%|█▍        | 70/500 [00:10<00:45,  9.42it/s] 14%|█▍        | 71/500 [00:10<00:47,  9.10it/s] 14%|█▍        | 72/500 [00:11<00:46,  9.17it/s] 15%|█▍        | 74/500 [00:11<00:44,  9.51it/s] 15%|█▌        | 75/500 [00:11<00:46,  9.22it/s] 15%|█▌        | 76/500 [00:11<00:46,  9.16it/s] 15%|█▌        | 77/500 [00:11<00:46,  9.14it/s] 16%|█▌        | 78/500 [00:11<00:46,  9.06it/s] 16%|█▌        | 79/500 [00:11<00:46,  9.14it/s] 16%|█▌        | 81/500 [00:11<00:43,  9.55it/s] 16%|█▋        | 82/500 [00:12<00:45,  9.24it/s] 17%|█▋        | 83/500 [00:12<00:46,  8.92it/s] 17%|█▋        | 84/500 [00:12<00:46,  8.99it/s] 17%|█▋        | 85/500 [00:12<00:45,  9.03it/s] 17%|█▋        | 86/500 [00:12<00:45,  9.13it/s] 18%|█▊        | 88/500 [00:12<00:44,  9.31it/s] 18%|█▊        | 89/500 [00:12<00:44,  9.18it/s] 18%|█▊        | 91/500 [00:13<00:42,  9.65it/s] 18%|█▊        | 92/500 [00:13<00:41,  9.72it/s] 19%|█▉        | 94/500 [00:13<00:42,  9.57it/s] 19%|█▉        | 95/500 [00:13<00:43,  9.40it/s] 19%|█▉        | 97/500 [00:13<00:40,  9.87it/s] 20%|█▉        | 99/500 [00:13<00:41,  9.76it/s] 20%|██        | 100/500 [00:14<00:44,  8.98it/s] 20%|██        | 101/500 [00:14<00:46,  8.65it/s] 20%|██        | 102/500 [00:14<00:44,  8.89it/s] 21%|██        | 103/500 [00:14<00:43,  9.07it/s] 21%|██        | 105/500 [00:14<00:41,  9.56it/s] 21%|██▏       | 107/500 [00:14<00:39, 10.03it/s] 22%|██▏       | 109/500 [00:14<00:37, 10.34it/s] 22%|██▏       | 111/500 [00:15<00:37, 10.36it/s] 23%|██▎       | 113/500 [00:15<00:38, 10.10it/s] 23%|██▎       | 115/500 [00:15<00:39,  9.83it/s] 23%|██▎       | 116/500 [00:15<00:39,  9.83it/s] 24%|██▎       | 118/500 [00:15<00:37, 10.19it/s] 24%|██▍       | 120/500 [00:16<00:37, 10.22it/s] 24%|██▍       | 122/500 [00:16<00:36, 10.23it/s] 25%|██▍       | 124/500 [00:16<00:37, 10.11it/s] 25%|██▌       | 126/500 [00:16<00:38,  9.82it/s] 25%|██▌       | 127/500 [00:16<00:39,  9.37it/s] 26%|██▌       | 128/500 [00:16<00:39,  9.42it/s] 26%|██▌       | 130/500 [00:17<00:37,  9.88it/s] 26%|██▋       | 132/500 [00:17<00:35, 10.35it/s] 27%|██▋       | 134/500 [00:17<00:37,  9.81it/s] 27%|██▋       | 136/500 [00:17<00:36, 10.02it/s] 28%|██▊       | 138/500 [00:17<00:37,  9.65it/s] 28%|██▊       | 140/500 [00:18<00:37,  9.50it/s] 28%|██▊       | 141/500 [00:18<00:37,  9.45it/s] 28%|██▊       | 142/500 [00:18<00:38,  9.36it/s] 29%|██▊       | 143/500 [00:18<00:38,  9.32it/s] 29%|██▉       | 144/500 [00:18<00:38,  9.17it/s] 29%|██▉       | 145/500 [00:18<00:39,  8.94it/s] 29%|██▉       | 147/500 [00:18<00:37,  9.29it/s] 30%|██▉       | 148/500 [00:18<00:38,  9.17it/s] 30%|███       | 150/500 [00:19<00:35,  9.79it/s] 30%|███       | 151/500 [00:19<00:35,  9.79it/s] 31%|███       | 153/500 [00:19<00:34, 10.03it/s] 31%|███       | 154/500 [00:19<00:34, 10.02it/s] 31%|███       | 156/500 [00:19<00:34, 10.01it/s] 31%|███▏      | 157/500 [00:19<00:34,  9.90it/s] 32%|███▏      | 158/500 [00:19<00:35,  9.71it/s] 32%|███▏      | 160/500 [00:20<00:34,  9.97it/s] 32%|███▏      | 162/500 [00:20<00:33, 10.11it/s] 33%|███▎      | 164/500 [00:20<00:33,  9.97it/s] 33%|███▎      | 165/500 [00:20<00:33,  9.94it/s] 33%|███▎      | 167/500 [00:20<00:32, 10.28it/s] 34%|███▍      | 169/500 [00:21<00:32, 10.30it/s] 34%|███▍      | 171/500 [00:21<00:31, 10.30it/s] 35%|███▍      | 173/500 [00:21<00:32, 10.12it/s] 35%|███▌      | 175/500 [00:21<00:33,  9.84it/s] 35%|███▌      | 177/500 [00:21<00:32, 10.06it/s] 36%|███▌      | 179/500 [00:22<00:31, 10.13it/s] 36%|███▌      | 181/500 [00:22<00:31, 10.09it/s] 37%|███▋      | 183/500 [00:22<00:31, 10.05it/s] 37%|███▋      | 185/500 [00:22<00:31, 10.12it/s] 37%|███▋      | 187/500 [00:22<00:29, 10.67it/s] 38%|███▊      | 189/500 [00:22<00:29, 10.38it/s] 38%|███▊      | 191/500 [00:23<00:29, 10.37it/s] 39%|███▊      | 193/500 [00:23<00:30, 10.17it/s] 39%|███▉      | 195/500 [00:23<00:30, 10.07it/s] 39%|███▉      | 197/500 [00:23<00:29, 10.34it/s] 40%|███▉      | 199/500 [00:23<00:28, 10.47it/s] 40%|████      | 201/500 [00:24<00:28, 10.52it/s] 41%|████      | 203/500 [00:24<00:29, 10.12it/s] 41%|████      | 205/500 [00:24<00:28, 10.20it/s] 41%|████▏     | 207/500 [00:24<00:29,  9.88it/s] 42%|████▏     | 208/500 [00:24<00:30,  9.72it/s] 42%|████▏     | 210/500 [00:25<00:28, 10.26it/s] 42%|████▏     | 212/500 [00:25<00:27, 10.59it/s] 43%|████▎     | 214/500 [00:25<00:27, 10.30it/s] 43%|████▎     | 216/500 [00:25<00:28, 10.03it/s] 44%|████▎     | 218/500 [00:25<00:28,  9.83it/s] 44%|████▍     | 220/500 [00:26<00:27, 10.31it/s] 44%|████▍     | 222/500 [00:26<00:27, 10.11it/s] 45%|████▍     | 224/500 [00:26<00:28,  9.70it/s] 45%|████▌     | 226/500 [00:26<00:27,  9.88it/s] 46%|████▌     | 228/500 [00:26<00:26, 10.22it/s] 46%|████▌     | 230/500 [00:27<00:26, 10.09it/s] 46%|████▋     | 232/500 [00:27<00:26, 10.13it/s] 47%|████▋     | 234/500 [00:27<00:26, 10.21it/s] 47%|████▋     | 236/500 [00:27<00:26,  9.98it/s] 48%|████▊     | 238/500 [00:27<00:26,  9.89it/s] 48%|████▊     | 239/500 [00:27<00:26,  9.75it/s] 48%|████▊     | 241/500 [00:28<00:25, 10.05it/s] 49%|████▊     | 243/500 [00:28<00:25, 10.23it/s] 49%|████▉     | 245/500 [00:28<00:24, 10.24it/s] 49%|████▉     | 247/500 [00:28<00:24, 10.40it/s] 50%|████▉     | 249/500 [00:28<00:23, 10.47it/s] 50%|█████     | 251/500 [00:29<00:24, 10.13it/s] 51%|█████     | 253/500 [00:29<00:24, 10.25it/s] 51%|█████     | 255/500 [00:29<00:24,  9.97it/s] 51%|█████▏    | 257/500 [00:29<00:24,  9.88it/s] 52%|█████▏    | 258/500 [00:29<00:24,  9.83it/s] 52%|█████▏    | 259/500 [00:29<00:24,  9.81it/s] 52%|█████▏    | 261/500 [00:30<00:24,  9.88it/s] 52%|█████▏    | 262/500 [00:30<00:24,  9.70it/s] 53%|█████▎    | 263/500 [00:30<00:24,  9.64it/s] 53%|█████▎    | 265/500 [00:30<00:23, 10.03it/s] 53%|█████▎    | 266/500 [00:30<00:23,  9.95it/s] 54%|█████▎    | 268/500 [00:30<00:23,  9.89it/s] 54%|█████▍    | 269/500 [00:30<00:23,  9.89it/s] 54%|█████▍    | 270/500 [00:31<00:23,  9.89it/s] 54%|█████▍    | 271/500 [00:31<00:23,  9.60it/s] 54%|█████▍    | 272/500 [00:31<00:24,  9.44it/s] 55%|█████▍    | 273/500 [00:31<00:23,  9.56it/s] 55%|█████▌    | 275/500 [00:31<00:23,  9.77it/s] 55%|█████▌    | 276/500 [00:31<00:23,  9.55it/s] 56%|█████▌    | 278/500 [00:31<00:22, 10.03it/s] 56%|█████▌    | 280/500 [00:32<00:21, 10.28it/s] 56%|█████▋    | 282/500 [00:32<00:21,  9.98it/s] 57%|█████▋    | 284/500 [00:32<00:21,  9.99it/s] 57%|█████▋    | 286/500 [00:32<00:21,  9.98it/s] 57%|█████▋    | 287/500 [00:32<00:21,  9.93it/s] 58%|█████▊    | 289/500 [00:32<00:21, 10.00it/s] 58%|█████▊    | 290/500 [00:33<00:21,  9.97it/s] 58%|█████▊    | 291/500 [00:33<00:21,  9.89it/s] 59%|█████▊    | 293/500 [00:33<00:20, 10.32it/s] 59%|█████▉    | 295/500 [00:33<00:19, 10.34it/s] 59%|█████▉    | 297/500 [00:33<00:19, 10.52it/s] 60%|█████▉    | 299/500 [00:33<00:19, 10.54it/s] 60%|██████    | 301/500 [00:34<00:19, 10.03it/s] 61%|██████    | 303/500 [00:34<00:19, 10.10it/s] 61%|██████    | 305/500 [00:34<00:18, 10.26it/s] 61%|██████▏   | 307/500 [00:34<00:18, 10.17it/s] 62%|██████▏   | 309/500 [00:34<00:19,  9.96it/s] 62%|██████▏   | 310/500 [00:35<00:19,  9.83it/s] 62%|██████▏   | 312/500 [00:35<00:18, 10.22it/s] 63%|██████▎   | 314/500 [00:35<00:18, 10.27it/s] 63%|██████▎   | 316/500 [00:35<00:18, 10.01it/s] 64%|██████▎   | 318/500 [00:35<00:18, 10.04it/s] 64%|██████▍   | 320/500 [00:36<00:18,  9.96it/s] 64%|██████▍   | 322/500 [00:36<00:17, 10.27it/s] 65%|██████▍   | 324/500 [00:36<00:17, 10.03it/s] 65%|██████▌   | 326/500 [00:36<00:17,  9.77it/s] 66%|██████▌   | 328/500 [00:36<00:17,  9.99it/s] 66%|██████▌   | 330/500 [00:36<00:16, 10.48it/s] 66%|██████▋   | 332/500 [00:37<00:16, 10.45it/s] 67%|██████▋   | 334/500 [00:37<00:16, 10.34it/s] 67%|██████▋   | 336/500 [00:37<00:16,  9.82it/s] 67%|██████▋   | 337/500 [00:37<00:16,  9.71it/s] 68%|██████▊   | 338/500 [00:37<00:16,  9.53it/s] 68%|██████▊   | 339/500 [00:37<00:17,  9.23it/s] 68%|██████▊   | 340/500 [00:38<00:17,  9.26it/s] 68%|██████▊   | 342/500 [00:38<00:16,  9.62it/s] 69%|██████▉   | 344/500 [00:38<00:15, 10.09it/s] 69%|██████▉   | 346/500 [00:38<00:14, 10.28it/s] 70%|██████▉   | 348/500 [00:38<00:15,  9.91it/s] 70%|███████   | 350/500 [00:39<00:14, 10.09it/s] 70%|███████   | 352/500 [00:39<00:14, 10.14it/s] 71%|███████   | 354/500 [00:39<00:14, 10.19it/s] 71%|███████   | 356/500 [00:39<00:14,  9.98it/s] 71%|███████▏  | 357/500 [00:39<00:14,  9.78it/s] 72%|███████▏  | 358/500 [00:39<00:14,  9.53it/s] 72%|███████▏  | 359/500 [00:39<00:14,  9.52it/s] 72%|███████▏  | 360/500 [00:40<00:14,  9.53it/s] 72%|███████▏  | 361/500 [00:40<00:14,  9.44it/s] 72%|███████▏  | 362/500 [00:40<00:14,  9.39it/s] 73%|███████▎  | 363/500 [00:40<00:14,  9.49it/s] 73%|███████▎  | 364/500 [00:40<00:14,  9.45it/s] 73%|███████▎  | 365/500 [00:40<00:14,  9.58it/s] 73%|███████▎  | 367/500 [00:40<00:12, 10.49it/s] 74%|███████▍  | 369/500 [00:40<00:13,  9.89it/s] 74%|███████▍  | 370/500 [00:41<00:13,  9.84it/s] 74%|███████▍  | 372/500 [00:41<00:12, 10.44it/s] 75%|███████▍  | 374/500 [00:41<00:11, 10.59it/s] 75%|███████▌  | 376/500 [00:41<00:11, 10.81it/s] 76%|███████▌  | 378/500 [00:41<00:11, 10.55it/s] 76%|███████▌  | 380/500 [00:42<00:11, 10.38it/s] 76%|███████▋  | 382/500 [00:42<00:11, 10.37it/s] 77%|███████▋  | 384/500 [00:42<00:11, 10.24it/s] 77%|███████▋  | 386/500 [00:42<00:11,  9.99it/s] 78%|███████▊  | 388/500 [00:42<00:11,  9.79it/s] 78%|███████▊  | 390/500 [00:43<00:10, 10.02it/s] 78%|███████▊  | 392/500 [00:43<00:10, 10.04it/s] 79%|███████▉  | 394/500 [00:43<00:10, 10.38it/s] 79%|███████▉  | 396/500 [00:43<00:09, 10.73it/s] 80%|███████▉  | 398/500 [00:43<00:09, 10.33it/s] 80%|████████  | 400/500 [00:43<00:09, 10.34it/s] 80%|████████  | 402/500 [00:44<00:09, 10.32it/s] 81%|████████  | 404/500 [00:44<00:09, 10.54it/s] 81%|████████  | 406/500 [00:44<00:08, 10.45it/s] 82%|████████▏ | 408/500 [00:44<00:09,  9.96it/s] 82%|████████▏ | 410/500 [00:44<00:08, 10.11it/s] 82%|████████▏ | 412/500 [00:45<00:08, 10.27it/s] 83%|████████▎ | 414/500 [00:45<00:08, 10.36it/s] 83%|████████▎ | 416/500 [00:45<00:08, 10.23it/s] 84%|████████▎ | 418/500 [00:45<00:07, 10.38it/s] 84%|████████▍ | 420/500 [00:45<00:08,  9.95it/s] 84%|████████▍ | 422/500 [00:46<00:07, 10.09it/s] 85%|████████▍ | 424/500 [00:46<00:07, 10.08it/s] 85%|████████▌ | 426/500 [00:46<00:07, 10.34it/s] 86%|████████▌ | 428/500 [00:46<00:06, 10.52it/s] 86%|████████▌ | 430/500 [00:46<00:06, 10.59it/s] 86%|████████▋ | 432/500 [00:47<00:06, 10.35it/s] 87%|████████▋ | 434/500 [00:47<00:06, 10.37it/s] 87%|████████▋ | 436/500 [00:47<00:06, 10.50it/s] 88%|████████▊ | 438/500 [00:47<00:05, 10.49it/s] 88%|████████▊ | 440/500 [00:47<00:05, 10.53it/s] 88%|████████▊ | 442/500 [00:48<00:05, 10.60it/s] 89%|████████▉ | 444/500 [00:48<00:05, 10.59it/s] 89%|████████▉ | 446/500 [00:48<00:05, 10.70it/s] 90%|████████▉ | 448/500 [00:48<00:05, 10.38it/s] 90%|█████████ | 450/500 [00:48<00:04, 10.41it/s] 90%|█████████ | 452/500 [00:48<00:04, 10.81it/s] 91%|█████████ | 454/500 [00:49<00:04, 10.79it/s] 91%|█████████ | 456/500 [00:49<00:04, 10.97it/s] 92%|█████████▏| 458/500 [00:49<00:03, 10.73it/s] 92%|█████████▏| 460/500 [00:49<00:03, 10.58it/s] 92%|█████████▏| 462/500 [00:49<00:03, 10.75it/s] 93%|█████████▎| 464/500 [00:50<00:03, 10.69it/s] 93%|█████████▎| 466/500 [00:50<00:03, 10.59it/s] 94%|█████████▎| 468/500 [00:50<00:02, 10.71it/s] 94%|█████████▍| 470/500 [00:50<00:02, 10.74it/s] 94%|█████████▍| 472/500 [00:50<00:02, 10.63it/s] 95%|█████████▍| 474/500 [00:51<00:02, 10.59it/s] 95%|█████████▌| 476/500 [00:51<00:02, 10.48it/s] 96%|█████████▌| 478/500 [00:51<00:02, 10.35it/s] 96%|█████████▌| 480/500 [00:51<00:01, 10.69it/s] 96%|█████████▋| 482/500 [00:51<00:01, 10.76it/s] 97%|█████████▋| 484/500 [00:51<00:01, 10.57it/s] 97%|█████████▋| 486/500 [00:52<00:01, 10.71it/s] 98%|█████████▊| 488/500 [00:52<00:01, 10.50it/s] 98%|█████████▊| 490/500 [00:52<00:00, 10.56it/s] 98%|█████████▊| 492/500 [00:52<00:00, 10.56it/s] 99%|█████████▉| 494/500 [00:52<00:00, 10.25it/s] 99%|█████████▉| 496/500 [00:53<00:00, 10.56it/s]100%|█████████▉| 498/500 [00:53<00:00, 10.98it/s]100%|██████████| 500/500 [00:53<00:00, 10.60it/s]12/12/2023 19:27:23 - INFO - __main__ - epoch 0: {'accuracy': 0.9115}
+Configuration saved in /home/fuyali/emotionClassification/checkpoints/config.json
+Model weights saved in /home/fuyali/emotionClassification/checkpoints/pytorch_model.bin
+tokenizer config file saved in /home/fuyali/emotionClassification/checkpoints/tokenizer_config.json
+Special tokens file saved in /home/fuyali/emotionClassification/checkpoints/special_tokens_map.json
+100%|██████████| 500/500 [00:56<00:00,  8.86it/s]
